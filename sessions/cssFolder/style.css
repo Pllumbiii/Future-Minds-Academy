@@ -3,24 +3,49 @@
     padding: 0;
 }
 
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+}
 
-.h6 {
+header {
     background-color: red;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 300px;
 }
 
-.h4 {
+aside {
+    background-color: blue;
+    padding: 25px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto 2fr;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.article1 {
     background-color: green;
-    width: 200px;
-    height: 200px;
 }
 
-.h1 {
-    background-color: blueviolet;
-    width: 400px;
-    height: 400px;
+.article2 {
+    background-color: pink;
+}
+
+.article3 {
+    background-color: yellow;
+}
+
+.section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

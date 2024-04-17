@@ -1,0 +1,23 @@
+header {
+    background-color: #0e65c2;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.gap {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.headerButtonSignup {
+    background-color: orangered;
+    height: 20px;
+
+}
