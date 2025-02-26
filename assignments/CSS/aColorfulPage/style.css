@@ -1,0 +1,15 @@
+.background {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.46551120448179273) 0%, rgba(95,9,121,1) 80%);
+}
+
+body {
+    background-image: url("./download.jpg");
+    color: rgb(104, 0, 149);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.384);
+}
