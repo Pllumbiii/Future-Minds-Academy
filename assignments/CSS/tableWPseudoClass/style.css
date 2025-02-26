@@ -1,11 +1,7 @@
-.bg1 {
-    background-color: green;
+tr:nth-child(even){
+    background-color: lightgreen;
 }
 
-.bg2 {
+tr:nth-child(odd){
     background-color: darkgreen;
-}
-
-.colorWhite {
-    color: white;
 }
