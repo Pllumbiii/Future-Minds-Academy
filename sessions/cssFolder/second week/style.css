@@ -1,7 +1,0 @@
-table:nth-child(even){
-    background-color: lightgreen;
-}
-
-table:nth-child(odd){
-    background-color: darkgreen;
-}

@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("./img/4626448516_4365d2e85b_b\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1em 10% 0 10%;
+}
+
+.dFlex{
+    display: flex;
+}
+
+#headerNav{
+    margin-left: 450px;
+}
+
+#headerA:hover{
+    background-color:rgb(165, 92, 104);
+}
+
+#firstSection:hover{
+    background-color: #a7a47b;
+}
+
+#secondSection:hover{
+    background-color: #9c9875;
+}
+
+#thirdSection:hover{
+    background-color: #220026;
+}
+
+#fourthSection:hover{
+    background-color: #520050;
+}
+
+.navCard{
+    border: 1px solid black;
+    margin: 10px;
+     border-radius: 10px;
+     padding: 10px;
+}
+
+#navHr{
+    height: 30px;
+    margin-top: 15px;
+}
+
+.tCenter{
+    text-align: center;
+}
+
+table {
+    margin-left: 350px;
+}
+
+ul{
+    list-style: none;
+}
+
+.card{
+    padding: 20px;
+    border: 1px solid black;
+   margin: 10px;
+    border-radius: 20px;
+}
+
+.educationCard{
+    padding: 20px;
+    border: 1px solid black;
+   margin: 10px;
+    border-radius: 20px;
+}
+
+.card:hover{
+   border: 3px solid black
+   -webkit-box-shadow: 10px 10px 36px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 36px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 36px 0px rgba(0,0,0,0.75);
+}
+
+.bgWheat{
+    background-color: #C2C094;
+}
+
+.bgGrey{
+    background-color: #A9A587;
+}
+
+.bgDarkGrey{
+    background-color: darkgray;
+}
+
+.bgPurple{
+    background-color: #390040;
+}
+
+.bgwhite{
+    background-color: white;
+}
+
+.bgLightPurple{
+    background-color: #730071;
+}
+
+.bgPink{
+    background-color: #DC9596;
+}
+
+.bgOrange{
+    background-color: orange;
+}
+
+.m10{
+    margin: 10px;
+}
+
+.colorWhite{
+    color: white;
+}
+
+.aCard{
+    padding: 5px;
+    border: 1px solid black;
+border-radius: 10px;
+display: inline-block;
+margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
