@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    background-color: lightcoral;
+}
+
+#second{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 2/3;
+    grid-column-gap: 10px;
+    background-color: white;
+}
+
+.bgGreen{
+    background-color: lightgreen;
+}

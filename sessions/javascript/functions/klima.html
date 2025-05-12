@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klima Code</title>
+    <style>
+        .wrapper {
+            position: relative;
+        }
+
+        h1 {
+            top: 30px;
+            left: 177px;
+            position: absolute;
+        }
+
+        select {
+            padding: 5px;
+            font-size: 16pt;
+            width: 100px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1 id="num">0</h1>
+        <img src="./klima.webp" alt="">
+    </div>
+
+    <select name="" id="temp"></select>
+
+    <ul id="list">
+    </ul>
+
+
+    <script>
+
+
+
+        const temp = document.querySelector('#temp');
+        temp.innerHTML = createTempList();
+
+
+        function createTempList() {
+
+            let tempHTML = '';
+
+            for (let i = 0; i <= 30; i++) {
+                tempHTML += ` <option value="${i}">${i}</option> `;
+
+            }
+
+
+
+            return tempHTML;
+        }
+        const list = document.querySelector('#list');
+        list.innerHTML = LoadList();
+
+
+        function LoadList() {
+            let listHTML = `
+             <li>1</li>
+             <li>2</li>
+             <li>3</li>
+            
+            `;
+
+            return listHTML;
+        }
+
+
+        temp.addEventListener('change', (obj) => {
+            num.textContent = obj.target.value
+
+        })
+
+    </script>
+</body>
+
+</html>

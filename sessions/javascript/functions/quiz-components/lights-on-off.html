@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Box</title>
+    <style>
+        .box {
+            width: 600px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            padding: 20px;
+            margin-top: 20px;
+            transition: 0.5s;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+        .active {
+            background-color: black;
+            color: white;box-shadow: rgba(245, 28, 28, 0.5) 0px 10px 36px 0px, rgba(243, 34, 34, 0.1) 0px 0px 0px 1px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <button id="switchBTN">Dark</button>
+    <div class="box">
+        <h2>Coca Cola</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi numquam qui accusamus tenetur! Sapiente ipsum beatae adipisci debitis. Libero non ducimus, rerum ab consectetur commodi ad. Odio ipsam architecto dolor.</p>
+    </div>
+
+    <script>
+        const switchBTN = document.querySelector('#switchBTN');
+        const box = document.querySelector('.box');
+        let showHide = false;
+
+        switchBTN.addEventListener('click', function(){
+            if(!showHide){
+                switchBTN.textContent = "Light";
+                showHide = true;
+                box.classList.add('active');
+            }
+            else {
+                switchBTN.textContent = "Dark";
+                showHide = false;
+                box.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

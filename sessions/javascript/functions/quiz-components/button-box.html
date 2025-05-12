@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Box</title>
+    <style>
+        .box{
+            width: 600px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            padding: 20px;
+            display: none;
+        }
+
+
+        body{
+            width: 99vw;
+            height: 99vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="showBTN">Start</button>
+    <div class="box">
+<h2>Coca Cola</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas amet eligendi fugiat aperiam. Ullam maxime velit quaerat magnam repellendus labore aperiam adipisci minus voluptate assumenda, rerum quos tenetur distinctio impedit!</p>
+<button id="exit">Exit</button>    
+</div>
+
+<script>
+
+const showBTN = document.querySelector('#showBTN');
+const box = document.querySelector('.box');
+const exit = document.querySelector('#exit')
+showBTN.addEventListener('click', function(){
+
+box.style.display = "block";
+showBTN.style.display = "none";
+
+});
+
+exit.addEventListener('click', function(){
+
+box.style.display = "none";
+showBTN.style.display = "block";
+
+
+})
+
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    border: 2px solid black;
+    width: 250px;
+    margin: 10px;
+}
+
+#ticket-price{
+    display: flex;
+    border-right: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#ticket-price-and-date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ticket-date-and-number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+#ticket-image-and-text{
+    border: 1px solid black;
+    background-image: url("./img/ee73c81b1ec4827e01301cbb67e9c6a2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+        #line { 
+            width: 600px; 
+            height: 5px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="timer">15</h1>
+    <div id="line"></div>
+    <button onclick="reset()">Reset</button>
+    <script>
+        const timer = document.querySelector('#timer');
+        const line = document.querySelector('#line');
+        let time = 15;
+        let lineW = 600;
+        let restStatus = false;
+        let mytimer;
+        let endTimer = false;
+        heartBeat();
+        reset();
+        function reset(){
+            
+            if(!restStatus){
+                time = 16;
+                lineW = 600;
+                restStatus = true;
+            }
+            else {
+                time = 15;
+                lineW = 600;
+                clearInterval(mytimer);
+                timer.textContent = time;
+                line.style.width = lineW + "px";
+                restStatus = false;
+                
+            }
+            if(endTimer) { heartBeat(); endTimer=true; }
+        }
+
+        function heartBeat(){
+            mytimer = setInterval(function(){
+                console.log("heartbeat");
+                if(time != 0) { time--; lineW -=40; } else { clearInterval(mytimer); endTimer = true; }
+                timer.textContent = time;
+                line.style.width = lineW + "px";
+            }, 1000);
+        }
+        
+        
+    </script>
+</body>
+</html>

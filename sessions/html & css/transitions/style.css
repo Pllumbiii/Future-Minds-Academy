@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+img{
+    border-radius: 50%;
+    filter: blur(10px);
+    transition: 2s ease-in-out;
+    position: absolute;
+}
+
+img:hover{
+transform: rotate(720deg);
+filter: blur(0px);
+}
+
+
